@@ -26,139 +26,156 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" title="Page d'accueil"><img id="logo" alt="logo BPR" src="img/logo_BPR_light.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+  <div id="layer" class="container-fluid">
+    <p id="layerP">
+      <h5 class="fw-bold fs-3">Information importante</h5>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu porta tortor. 
+      Ut ultrices quam vel nunc scelerisque, in egestas justo mattis. 
+      Donec efficitur ornare neque, vitae varius leo tempus ut. 
+      Aliquam ullamcorper egestas nulla, eu consequat ligula imperdiet in. Aenean a leo dui. 
+      Integer lacinia sit amet ipsum et tincidunt. Donec consequat turpis eget purus consequat malesuada. 
+      Morbi consequat semper laoreet. Nam id arcu sit amet purus dapibus pharetra. 
+    </p>
+    <button class="bodyHidden btn btn-danger col-3" onclick="closeLayer();">J'ai compris</button>
+  </div>
+
+  <div id="bodyShow">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Page d'accueil"><img id="logo" alt="logo BPR" src="img/logo_BPR_light.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Opérations
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Statistiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Actualités</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <header class="bg-secondary p-4 rounded-lg mb-5">
-    <section class="container-fluid">      
-      <h1>BPR la Banque Pour les Riches</h1>
-      <hr class="bg-info">
-      <p>A la BPR, nous préferons un riche qui nous donne peu plutôt qu'un pauvre qui nous donne tout.</p>
-    </section>
-  </header>
+    <header class="bg-secondary p-4 rounded-lg mb-5">
+      <section class="container-fluid">      
+        <h1>BPR la Banque Pour les Riches</h1>
+        <hr class="bg-info">
+        <p>A la BPR, nous préferons un riche qui nous donne peu plutôt qu'un pauvre qui nous donne tout.</p>
+      </section>
+    </header>
 
-  <main class="container-fluid p-3">
+    <main class="container-fluid p-3">
 
-    <h2>Comptes bancaires</h2>
+      <h2>Comptes bancaires</h2>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
 
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-header">
-            Compte
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Compte Courant</h5>
-            <h6 class="card-subtitle text-muted mb-3">N°:01 000 000 fr 76</h6>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Propriétaire: Picsou Deritchold</li>
-              <li class="list-group-item">Solde : xxxxxx</li>
-              <li class="list-group-item">Dernière opération : xxxx</li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class=" row justify-content-evenly">
-              <a href="#" class="btn btn-primary col-3 p-1">Voir</a>
-              <a href="#" class="btn btn-primary col-5 p-1">Dépot/Retrait</a>            
-              <a href="#" class="btn btn-primary col-3 p-1">Cloture</a>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              Compte
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Compte Courant</h5>
+              <h6 class="card-subtitle text-muted mb-3">N°:01 000 000 fr 76</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Propriétaire: Picsou Deritchold</li>
+                <li class="list-group-item">Solde : xxxxxx</li>
+                <li class="list-group-item">Dernière opération : xxxx</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <div class=" row justify-content-evenly">
+                <a href="#" class="btn btn-primary col-3 p-1">Voir</a>
+                <a href="#" class="btn btn-primary col-5 p-1">Dépot/Retrait</a>            
+                <a href="#" class="btn btn-primary col-3 p-1">Cloture</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-header">
-            Livret
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Livret A</h5>
-            <h6 class="card-subtitle text-muted mb-3">N°:02 000 000 fr 76</h6>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Propriétaire: Picsou Deritchold</li>
-              <li class="list-group-item">Solde : xxxxxx</li>
-              <li class="list-group-item">Dernière opération : xxxx</li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class=" row justify-content-evenly">
-              <a href="#" class="btn btn-primary col-3 p-1">Voir</a>
-              <a href="#" class="btn btn-primary col-5 p-1">Dépot/Retrait</a>            
-              <a href="#" class="btn btn-primary col-3 p-1">Cloture</a>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              Livret
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Livret A</h5>
+              <h6 class="card-subtitle text-muted mb-3">N°:02 000 000 fr 76</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Propriétaire: Picsou Deritchold</li>
+                <li class="list-group-item">Solde : xxxxxx</li>
+                <li class="list-group-item">Dernière opération : xxxx</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <div class=" row justify-content-evenly">
+                <a href="#" class="btn btn-primary col-3 p-1">Voir</a>
+                <a href="#" class="btn btn-primary col-5 p-1">Dépot/Retrait</a>            
+                <a href="#" class="btn btn-primary col-3 p-1">Cloture</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-header">
-            Livret
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">PEL</h5>
-            <h6 class="card-subtitle text-muted mb-3">N°:03 000 000 fr 76</h6>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Propriétaire: Picsou Deritchold</li>
-              <li class="list-group-item">Solde : xxxxxx</li>
-              <li class="list-group-item">Dernière opération : xxxx</li>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class=" row justify-content-evenly">
-              <a href="#" class="btn btn-primary col-3 p-1">Voir</a>
-              <a href="#" class="btn btn-primary col-5 p-1">Dépot/Retrait</a>            
-              <a href="#" class="btn btn-primary col-3 p-1">Cloture</a>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              Livret
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">PEL</h5>
+              <h6 class="card-subtitle text-muted mb-3">N°:03 000 000 fr 76</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Propriétaire: Picsou Deritchold</li>
+                <li class="list-group-item">Solde : xxxxxx</li>
+                <li class="list-group-item">Dernière opération : xxxx</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <div class=" row justify-content-evenly">
+                <a href="#" class="btn btn-primary col-3 p-1">Voir</a>
+                <a href="#" class="btn btn-primary col-5 p-1">Dépot/Retrait</a>            
+                <a href="#" class="btn btn-primary col-3 p-1">Cloture</a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
-    </div>
+    </main>
 
-  </main>
+    <footer class="bg-secondary p-5 rounded-lg mt-5 text-center">
+      <section class="container-fluid row justify-content-center">
+        <a class="p-3" href="index.html" title="Page d'accueil"><img id="logo_footer" alt="logo BPR" src="img/logo_BPR_light.png"></a>
+        <p>BPR® La banque proche de ses clients et de leur porte monnaie</p>
+      </section>
+    </footer>
 
-  <footer class="bg-secondary p-5 rounded-lg mt-5 text-center">
-    <section class="container-fluid row justify-content-center">
-      <a class="p-3" href="index.html" title="Page d'accueil"><img id="logo_footer" alt="logo BPR" src="img/logo_BPR_light.png"></a>
-      <p class="">BPR® La banque proche de ses clients et de leur porte monnaie</p>
-    </section>
-  </footer>
+  </div>  
 
 
 

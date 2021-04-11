@@ -86,6 +86,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+#layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  opacity: 95%;
+  color: white;
+  text-align:justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#layerP {
+  margin-top: 30%;
+}
+
 nav {
   margin-bottom: 0%;
 }
@@ -110,6 +128,7 @@ hr:not([size]) {
 #logo_footer {
   max-width: 5%;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
